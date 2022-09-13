@@ -1,0 +1,91 @@
+baseURL = "https://1612647.github.io"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "LoveIt"
+
+[params]
+  description = "Hi! I'm Cowdev"
+    [params.header.title]
+      name = "Cowdev" 
+    [params.home.profile]
+      subtitle = "Hi! I'm Cowdev"
+
+# determines default content language ["en", "zh-cn", "fr", "pl", ...]
+defaultContentLanguage = "vi"
+
+[languages]
+  [languages.vi]
+    weight = 1
+    title = "Cowdev"
+    languageCode = "vi"
+    languageName = "Tiếng Việt"
+    [[languages.vi.menu.main]]
+      weight = 1
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "Bài viết"
+      url = "/posts/"
+      title = ""
+    [[languages.vi.menu.main]]
+      weight = 2
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "Thẻ"
+      url = "/tags/"
+      title = ""
+    [[languages.vi.menu.main]]
+      weight = 3
+      identifier = "categories"
+      pre = ""
+      post = ""
+      name = "Chủ đề"
+      url = "/categories/"
+      title = ""
+
+  [languages.en]
+    weight = 2
+    title = "Cowdev"
+    languageCode = "en"
+    languageName = "English"
+    [[languages.en.menu.main]]
+      weight = 1
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "Posts"
+      url = "/posts/"
+      title = ""
+    [[languages.en.menu.main]]
+      weight = 2
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "Tags"
+      url = "/tags/"
+      title = ""
+    [[languages.en.menu.main]]
+      weight = 3
+      identifier = "categories"
+      pre = ""
+      post = ""
+      name = "Categories"
+      url = "/categories/"
+      title = ""
+
+# Author config
+[author]
+  name = " thile.dev "
+  email = ""
+  link = ""
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
